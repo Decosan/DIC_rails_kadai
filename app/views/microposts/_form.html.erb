@@ -1,0 +1,7 @@
+<%=form_with(model:micropost,local:true,url: choose_new_or_edit)do |f|%>
+  <div class='content_group'>
+    <%=f.label :content,"Content"%>
+    <%=f.text_area :content,rows:5,placeholder:'Please insert..'%>
+  </div>
+  <%=f.submit 'Create'%>
+<% end %>

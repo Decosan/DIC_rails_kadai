@@ -1,0 +1,8 @@
+<h1>Are you OK?</h1>
+
+<%=form_with(model: @micropost,url: microposts_path,local: true)do |f|%>
+  <%=f.hidden_field :content %>
+
+  <p class='comment'>Content >> <%=@micropost.content%></p>
+  <%=f.submit "OK!"%>
+<% end %>

@@ -1,0 +1,36 @@
+body{
+  background:#f5f5dc;
+  font-size:14px;
+  font-family:Verdana sans-serif;
+}
+.comment{
+  background:#fff;
+  width:90%;
+  padding:10px;
+  border-radius:4px;
+  margin-bottom:10px;
+}
+h1{
+  color:#556b2f;
+  text-shadow:2px 2px 0px #696969;
+}
+.content_group label{
+  vertical-align:top;
+}
+.btn{
+  border: 1px solid green;
+  border-radius: 5px;
+  background-color: green;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  width: 70px;
+  text-decoration:none;
+}
+#red{
+  border: 1px solid gray;
+  background-color:red;
+}
+table{
+  margin-bottom:30px;
+}
