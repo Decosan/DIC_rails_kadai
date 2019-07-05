@@ -6,3 +6,8 @@
   <p class='comment'>Content >> <%=@micropost.content%></p>
   <%=f.submit "OK!"%>
 <% end %>
+
+<%=form_with(model:@micropost,url:new_micropost_path,local:true,method:'get')do |f|%>
+  <%=f.hidden_field :content%>
+  <%=f.submit 'Back',name:'back'%>
+<% end %>
