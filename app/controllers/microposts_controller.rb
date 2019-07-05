@@ -30,11 +30,8 @@ class MicropostsController < ApplicationController
   end
 
   def destroy
-    if @micropost.destroy
-      redirect_to microposts_path
-    else
-      render 'microposts/index'
-    end
+    @micropost.destroy
+    redirect_to microposts_path
   end
 
   def edit
