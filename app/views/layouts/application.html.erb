@@ -10,7 +10,18 @@
   </head>
 
   <body>
-    <%= yield %>
-    
+    <div class="wrapper">
+      <header>
+        <%=render 'layouts/navbar'%>
+      </header>
+      <section class='container'>
+
+        <%= yield %>
+
+      </section>
+      <footer>
+        <%=render 'layouts/footer'%>
+      </footer>
+    </div>
   </body>
 </html>
