@@ -1,4 +1,16 @@
 <%=form_with(model:micropost,local:true,url: choose_new_or_edit)do |f|%>
+
+<% if micropost.errors.any? %>
+ <div id='error_explanation'>
+   <h4><%=micropost.errors.count%>件のエラーがあります。</h4>
+   <ul>
+     <% micropost.errors.full_messages.each do |msg|%>
+     <li><%=msg%></li>
+     <% end %>
+   </ul>
+ </div>
+<% end %>
+
   <div class='content_group'>
     <%=f.label :content,"Content"%>
     <%=f.text_area :content,rows:5,placeholder:'Please insert..'%>

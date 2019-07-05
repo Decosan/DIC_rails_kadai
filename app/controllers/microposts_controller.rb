@@ -15,6 +15,9 @@ class MicropostsController < ApplicationController
 
   def confirm
     @micropost=Micropost.new(micropost_params)
+    if @micropost.invalid?
+      render 'new'
+    end
   end
 
   def create
