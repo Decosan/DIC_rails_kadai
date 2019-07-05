@@ -2,7 +2,7 @@ class MicropostsController < ApplicationController
   before_action :search_id, only:[:show,:destroy,:edit,:update]
 
   def index
-    @microposts=Micropost.all
+    @microposts=Micropost.all.order('created_at DESC')
   end
 
   def new

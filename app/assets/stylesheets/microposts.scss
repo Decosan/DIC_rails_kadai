@@ -34,3 +34,17 @@ h1{
 table{
   margin-bottom:30px;
 }
+#error_explanation{
+  background:black;
+  color:white;
+  width:250px;
+  border:5px solid red;
+  border-radius:4px;
+  text-align:center;
+}
+#error_explanation::after{
+  content:"ERROR CAUTION!!";
+  margin:0 auto;
+  font-weight:bold;
+  color:red;
+}
