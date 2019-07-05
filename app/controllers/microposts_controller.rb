@@ -6,7 +6,11 @@ class MicropostsController < ApplicationController
   end
 
   def new
-    @micropost=Micropost.new
+    if params[:back]
+      @micropost=Micropost.new(micropost_params)
+    else
+      @micropost=Micropost.new
+    end
   end
 
   def confirm
